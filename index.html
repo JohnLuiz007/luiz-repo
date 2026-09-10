@@ -1,172 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Luiz — Software Developer</title>
-  <meta name="description" content="Portfolio of John Luiz, software developer." />
+  <title>John Luiz Gonzaga | AI Automation Engineer</title>
+  <meta name="description" content="John Luiz Gonzaga — AI Automation Engineer & Computer Science student. Building automation pipelines, AI voice agents, and full-stack tools." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            border: 'hsl(var(--border))',
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            primary: { DEFAULT: 'hsl(var(--primary))', foreground: 'hsl(var(--primary-foreground))' },
+            accent: { DEFAULT: 'hsl(var(--accent))', foreground: 'hsl(var(--accent-foreground))' },
+            card: { DEFAULT: 'hsl(var(--card))', foreground: 'hsl(var(--card-foreground))' },
+            muted: { DEFAULT: 'hsl(var(--muted))', foreground: 'hsl(var(--muted-foreground))' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="nav">
-    <div class="nav-inner">
-      <a href="#home" class="brand">John Luiz</a>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<body class="bg-background text-foreground font-sans">
+
+  <nav id="navbar" class="fixed top-0 inset-x-0 z-[999] border-b border-border bg-background/70 backdrop-blur-md">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-lg font-bold tracking-tight flex items-center gap-1.5">
+        <span>John Luiz</span>
+        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Gonzaga</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#experience" class="nav-link hover:text-primary transition-colors">Experience</a>
+        <a href="#projects" class="nav-link hover:text-primary transition-colors">Projects</a>
+        <a href="#certifications" class="nav-link hover:text-primary transition-colors">Certifications</a>
+        <a href="#about" class="nav-link hover:text-primary transition-colors">About</a>
+        <a href="#contact" class="nav-link hover:text-primary transition-colors">Contact</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-inner hero-inner--split">
-        <div class="hero-text">
-          <p class="eyebrow">Hi, I'm</p>
-          <h1>John Luiz Gonzaga</h1>
-          <p class="lead">AI Automation Engineer</p>
-          <p class="hero-sub">
-            I build automation pipelines and full-stack tools — from AI voice agents and CRM
-            reporting systems to web apps. Currently at Playbook Sports, based in Cabuyao, Laguna.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="Gonzaga_Updated_Resume_9-11-26.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Resume</a>
-            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+  <main class="max-w-5xl mx-auto px-6">
+
+    <!-- HERO -->
+    <section id="hero" class="pt-40 pb-20 flex flex-col md:flex-row items-center gap-12">
+      <div class="flex-1">
+        <p class="font-mono text-xs uppercase tracking-widest text-primary mb-4">AI_AUTOMATION_ENGINEER :: STATUS_ACTIVE</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">John Luiz Gonzaga</h1>
+        <p class="text-xl md:text-2xl text-muted-foreground mb-5">AI Automation Engineer @ Playbook Sports</p>
+        <p class="text-muted-foreground max-w-xl mb-8">
+          I build automation pipelines and full-stack tools — from AI voice agents and CRM
+          reporting systems to internal factory tooling. BS Computer Science student at Mapua
+          Malayan Colleges Laguna. Based in Cabuyao, Laguna.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#experience" class="cosmic-button px-6 py-3 rounded-lg font-semibold text-sm">View Experience</a>
+          <a href="Gonzaga_Updated_Resume_9-11-26.pdf" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg font-semibold text-sm border border-border hover:border-primary transition-colors">Resume</a>
+          <a href="#contact" class="px-6 py-3 rounded-lg font-semibold text-sm border border-border hover:border-primary transition-colors">Get in Touch</a>
+        </div>
+      </div>
+      <img src="picture-of-me.jpg" alt="John Luiz Gonzaga" class="w-44 h-44 rounded-full object-cover border-2 border-border flex-shrink-0" />
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-16 border-t border-border">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2">Experience</h2>
+      <p class="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-10">CS_STUDENT :: 4TH_YR &mdash; MAPUA_MALAYAN_COLLEGES_LAGUNA</p>
+
+      <div class="relative border-l border-border pl-8 space-y-12">
+
+        <div class="relative">
+          <span class="absolute -left-[calc(2rem+5px)] top-1.5 w-3 h-3 rounded-full bg-primary"></span>
+          <p class="font-mono text-xs uppercase tracking-widest text-primary mb-1">Oct 2025 &ndash; Present &middot; Remote</p>
+          <h3 class="text-lg font-bold">AI Automation Engineer &middot; Playbook Sports</h3>
+          <ul class="mt-3 space-y-2 text-muted-foreground text-sm list-disc list-outside ml-4">
+            <li>Built a weekly CRM email report covering revenue, client progress, and issues — saving ~6 hours of manual reporting each week.</li>
+            <li>Built an automated pipeline that creates a custom AI voice agent per client, pulling details from their website, assigning a phone number, loading a knowledge base, and routing/logging every call.</li>
+            <li>Built a daily support report that rates resolved tickets and tracks agent response times (average, median, worst-case).</li>
+            <li>Built an automated campaign system for game recommendations and email/SMS promotions with cooldowns, suppression rules, and database-level safeguards.</li>
+          </ul>
+        </div>
+
+        <div class="relative">
+          <span class="absolute -left-[calc(2rem+5px)] top-1.5 w-3 h-3 rounded-full bg-accent"></span>
+          <p class="font-mono text-xs uppercase tracking-widest text-accent mb-1">May 2025 &ndash; Aug 2026 &middot; Cabuyao, Laguna</p>
+          <h3 class="text-lg font-bold">Factory Automation Intern &middot; Ampleon Philippines Inc.</h3>
+          <ul class="mt-3 space-y-2 text-muted-foreground text-sm list-disc list-outside ml-4">
+            <li>Built a web tool that checks which test files exist per production lot in a searchable, self-updating table — replacing manual folder inspection.</li>
+            <li>Built a tool that records every file appearing/disappearing across local and remote folders, keeping a timestamped history viewable network-wide.</li>
+            <li>Documented the test process for RF semiconductor manufacturing machines.</li>
+            <li>Built a monitoring interface for machine component order requests.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-16 border-t border-border">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <article class="card-hover bg-card border border-border rounded-2xl overflow-hidden flex flex-col">
+          <img src="quickbite.jpg" alt="QuickBite menu screen" class="w-full h-40 object-cover border-b border-border" />
+          <div class="p-6 flex flex-col gap-3 flex-1">
+            <span class="font-mono text-xs uppercase tracking-widest text-primary">Full-Stack &middot; E-Commerce</span>
+            <h3 class="text-lg font-bold">QuickBite</h3>
+            <p class="text-sm text-muted-foreground flex-1">
+              Responsive food ordering platform. Customers browse the menu, cart, and checkout via
+              Stripe; admins manage inventory and order status in real time.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">React</span>
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">Node.js</span>
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">MongoDB</span>
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">Stripe</span>
+            </div>
+            <a href="https://github.com/JohnLuiz007/QuickBite" target="_blank" rel="noopener" class="text-sm font-semibold text-primary mt-2">Code &rarr;</a>
           </div>
-        </div>
-        <img src="picture-of-me.jpg" alt="John Luiz" class="hero-photo" />
+        </article>
+
+        <article class="card-hover bg-card border border-border rounded-2xl overflow-hidden flex flex-col">
+          <img src="dermalens.png" alt="DermaLens VR body model" class="w-full h-40 object-cover border-b border-border" />
+          <div class="p-6 flex flex-col gap-3 flex-1">
+            <span class="font-mono text-xs uppercase tracking-widest text-primary">FastAPI &middot; VR Education</span>
+            <h3 class="text-lg font-bold">DermaLens</h3>
+            <p class="text-sm text-muted-foreground flex-1">
+              Content backend for a VR dermatology training app. Serves staged skin-condition
+              models, lesson content, and interactive quizzes to the VR frontend.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">FastAPI</span>
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">PostgreSQL</span>
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">Supabase</span>
+            </div>
+            <a href="https://github.com/iceman-github/dermaLensBackend" target="_blank" rel="noopener" class="text-sm font-semibold text-primary mt-2">Code &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card-hover bg-card border border-border rounded-2xl overflow-hidden flex flex-col">
+          <img src="whackamole_game.jpg" alt="Skacky Whunky whack-a-mole game" class="w-full h-40 object-cover border-b border-border" />
+          <div class="p-6 flex flex-col gap-3 flex-1">
+            <span class="font-mono text-xs uppercase tracking-widest text-primary">Desktop Game</span>
+            <h3 class="text-lg font-bold">Skacky Whunky</h3>
+            <p class="text-sm text-muted-foreground flex-1">
+              A whack-a-mole style desktop game with a timer and miss counter, built around simple
+              reflex-based gameplay and animated sprite targets.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">C#</span>
+              <span class="skill-badge text-xs px-2.5 py-1 rounded-full border border-border">.NET</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <section id="projects" class="projects">
-      <div class="section-inner">
-        <h2>Projects</h2>
-        <div class="project-grid">
-
-          <article class="project-card">
-            <img src="quickbite.jpg" alt="QuickBite menu screen" class="project-image" />
-            <div class="project-card-body">
-              <span class="project-tag">Full-Stack · E-Commerce</span>
-              <h3>QuickBite</h3>
-              <p>
-                Responsive food ordering platform. Customers browse the menu, cart, and checkout via
-                Stripe; admins manage inventory and order status in real time.
-              </p>
-              <ul class="tech-list">
-                <li>React</li>
-                <li>Vite</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>Stripe</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://github.com/JohnLuiz007/QuickBite" target="_blank" rel="noopener">Code →</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="dermalens.png" alt="DermaLens VR body model" class="project-image" />
-            <div class="project-card-body">
-              <span class="project-tag">FastAPI · VR Education</span>
-              <h3>DermaLens</h3>
-              <p>
-                Content backend for a VR dermatology training app. Serves staged skin-condition models,
-                lesson content, and interactive quizzes to the VR frontend.
-              </p>
-              <ul class="tech-list">
-                <li>FastAPI</li>
-                <li>PostgreSQL</li>
-                <li>SQLAlchemy</li>
-                <li>Supabase</li>
-                <li>Vercel</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://github.com/iceman-github/dermaLensBackend" target="_blank" rel="noopener">Code →</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="whackamole_game.jpg" alt="Skacky Whunky whack-a-mole game" class="project-image" />
-            <div class="project-card-body">
-              <span class="project-tag">Desktop Game</span>
-              <h3>Skacky Whunky</h3>
-              <p>
-                A whack-a-mole style desktop game with a timer and miss counter, built around simple
-                reflex-based gameplay and animated sprite targets.
-              </p>
-              <ul class="tech-list">
-                <li>C#</li>
-                <li>.NET</li>
-              </ul>
-              <div class="project-links"></div>
-            </div>
-          </article>
-
-        </div>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="py-16 border-t border-border">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10">Certifications</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a href="IBM_Machine_Learning_Cert.pdf" target="_blank" rel="noopener" class="card-hover flex items-center gap-4 bg-card border border-border rounded-2xl p-5">
+          <img src="cert-ibm.png" alt="IBM Machine Learning certificate preview" class="w-20 h-16 object-cover rounded-lg border border-border flex-shrink-0" />
+          <div class="flex-1">
+            <h3 class="font-bold">IBM Machine Learning</h3>
+            <p class="text-sm text-muted-foreground">Professional certificate</p>
+          </div>
+          <span class="text-primary font-semibold text-sm flex-shrink-0">View &rarr;</span>
+        </a>
+        <a href="Wadhwani%20Foundation%20Certificate%20-%206a74b3699ca40b8cfdb7596a.pdf" target="_blank" rel="noopener" class="card-hover flex items-center gap-4 bg-card border border-border rounded-2xl p-5">
+          <img src="cert-wadhwani.png" alt="Wadhwani Foundation certificate preview" class="w-20 h-16 object-cover rounded-lg border border-border flex-shrink-0" />
+          <div class="flex-1">
+            <h3 class="font-bold">Wadhwani Foundation</h3>
+            <p class="text-sm text-muted-foreground">Certificate</p>
+          </div>
+          <span class="text-primary font-semibold text-sm flex-shrink-0">View &rarr;</span>
+        </a>
       </div>
     </section>
 
-    <section id="certifications" class="certifications">
-      <div class="section-inner">
-        <h2>Certifications</h2>
-        <div class="cert-list">
-          <a href="IBM_Machine_Learning_Cert.pdf" target="_blank" rel="noopener" class="cert-card">
-            <img src="cert-ibm.png" alt="IBM Machine Learning certificate preview" class="cert-thumb" />
-            <div class="cert-card-text">
-              <h3>IBM Machine Learning</h3>
-              <p>Professional certificate</p>
-            </div>
-            <span class="cert-link">View →</span>
-          </a>
-          <a href="Wadhwani%20Foundation%20Certificate%20-%206a74b3699ca40b8cfdb7596a.pdf" target="_blank" rel="noopener" class="cert-card">
-            <img src="cert-wadhwani.png" alt="Wadhwani Foundation certificate preview" class="cert-thumb" />
-            <div class="cert-card-text">
-              <h3>Wadhwani Foundation</h3>
-              <p>Certificate</p>
-            </div>
-            <span class="cert-link">View →</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="section-inner">
-        <h2>About</h2>
+    <!-- ABOUT -->
+    <section id="about" class="py-16 border-t border-border">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">About</h2>
+      <div class="max-w-2xl space-y-4 text-muted-foreground">
         <p>
-          I'm a Computer Science student at Mapua Malayan Colleges Laguna (2022–2026), currently
-          working as an AI Automation Engineer at Playbook Sports, where I build CRM reporting
-          pipelines, AI voice agents, and automated marketing campaign systems. Previously, as a
-          Factory Automation Intern at Ampleon Philippines, I built internal tools for tracking
-          production test files and monitoring file changes across the network.
+          I'm a Computer Science student at Mapua Malayan Colleges Laguna (2022&ndash;2026),
+          currently working as an AI Automation Engineer at Playbook Sports, where I build CRM
+          reporting pipelines, AI voice agents, and automated marketing campaign systems.
+          Previously, as a Factory Automation Intern at Ampleon Philippines, I built internal
+          tools for tracking production test files and monitoring file changes across the network.
         </p>
         <p>
           I work mainly with Python, C#/.NET, and JavaScript, and automate workflows with n8n,
           Zapier, and Microsoft Power Automate.
         </p>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="section-inner">
-        <h2>Get in Touch</h2>
-        <p>Interested in working together or just want to say hi?</p>
-        <div class="contact-links">
-          <a href="mailto:gonzagajohnluiz@gmail.com" class="btn btn-primary">Email Me</a>
-          <a href="https://github.com/JohnLuiz007" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">Python</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">C# / .NET</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">SQL</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">JavaScript</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">n8n</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">Zapier</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">Power Automate</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">Jira</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">Slack</span>
+          <span class="skill-badge text-xs px-3 py-1.5 rounded-full border border-border font-mono">Telnyx</span>
         </div>
       </div>
     </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16 border-t border-border">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Get in Touch</h2>
+      <p class="text-muted-foreground mb-8">Interested in working together or just want to say hi?</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="mailto:gonzagajohnluiz@gmail.com" class="cosmic-button px-6 py-3 rounded-lg font-semibold text-sm">Email Me</a>
+        <a href="https://github.com/JohnLuiz007" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg font-semibold text-sm border border-border hover:border-primary transition-colors">GitHub</a>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> John Luiz. Built with HTML, CSS &amp; JS.</p>
+  <footer class="border-t border-border py-8 text-center text-sm text-muted-foreground">
+    <p>&copy; <span id="year"></span> John Luiz Gonzaga. Built with HTML, Tailwind &amp; JS.</p>
   </footer>
 
   <script src="script.js"></script>
