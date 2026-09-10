@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Luiz — Software Developer</title>
+  <meta name="description" content="Portfolio of John Luiz, software developer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand">John Luiz</a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>John Luiz</h1>
+        <p class="lead">Software Developer</p>
+        <p class="hero-sub">
+          I build full-stack applications — from e-commerce platforms to backend services.
+          Edit this line to describe what you focus on.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="section-inner">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="project-card-body">
+              <span class="project-tag">Full-Stack · E-Commerce</span>
+              <h3>QuickBite</h3>
+              <p>
+                A fully responsive food ordering and management system. Customers browse the menu,
+                add items to cart, and checkout with Stripe. Admins manage the menu and track order
+                status in real time.
+              </p>
+              <ul class="tech-list">
+                <li>React</li>
+                <li>Vite</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Stripe</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/JohnLuiz007/QuickBite" target="_blank" rel="noopener">Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--placeholder">
+            <div class="project-card-body">
+              <span class="project-tag">Project title</span>
+              <h3>Coming soon</h3>
+              <p>
+                Placeholder — swap this out with your next project's description, tech stack, and links.
+              </p>
+              <ul class="tech-list">
+                <li>Tech</li>
+                <li>Stack</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" onclick="return false;">Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--placeholder">
+            <div class="project-card-body">
+              <span class="project-tag">Project title</span>
+              <h3>Coming soon</h3>
+              <p>
+                Placeholder — swap this out with another project's description, tech stack, and links.
+              </p>
+              <ul class="tech-list">
+                <li>Tech</li>
+                <li>Stack</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" onclick="return false;">Code →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="section-inner">
+        <h2>About</h2>
+        <p>
+          Write a short bio here — your background, what you enjoy building, and what you're
+          currently learning or looking for.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-inner">
+        <h2>Get in Touch</h2>
+        <p>Interested in working together or just want to say hi?</p>
+        <div class="contact-links">
+          <a href="mailto:you@example.com" class="btn btn-primary">Email Me</a>
+          <a href="https://github.com/JohnLuiz007" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> John Luiz. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
