@@ -13,6 +13,7 @@
       <a href="#home" class="brand">John Luiz</a>
       <nav>
         <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -21,19 +22,22 @@
 
   <main>
     <section id="home" class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">Hi, I'm</p>
-        <h1>John Luiz</h1>
-        <p class="lead">Software Developer</p>
-        <p class="hero-sub">
-          I build full-stack applications — from e-commerce platforms to backend services.
-          Edit this line to describe what you focus on.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="Gonzaga_Updated_Resume_9-11-26.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Resume</a>
-          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      <div class="hero-inner hero-inner--split">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>John Luiz</h1>
+          <p class="lead">Software Developer</p>
+          <p class="hero-sub">
+            I build full-stack applications — from e-commerce platforms to backend services.
+            Edit this line to describe what you focus on.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="Gonzaga_Updated_Resume_9-11-26.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Resume</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
         </div>
+        <img src="picture-of-me.jpg" alt="John Luiz" class="hero-photo" />
       </div>
     </section>
 
@@ -43,13 +47,13 @@
         <div class="project-grid">
 
           <article class="project-card">
+            <img src="quickbite.jpg" alt="QuickBite menu screen" class="project-image" />
             <div class="project-card-body">
               <span class="project-tag">Full-Stack · E-Commerce</span>
               <h3>QuickBite</h3>
               <p>
-                A fully responsive food ordering and management system. Customers browse the menu,
-                add items to cart, and checkout with Stripe. Admins manage the menu and track order
-                status in real time.
+                Responsive food ordering platform. Customers browse the menu, cart, and checkout via
+                Stripe; admins manage inventory and order status in real time.
               </p>
               <ul class="tech-list">
                 <li>React</li>
@@ -66,13 +70,13 @@
           </article>
 
           <article class="project-card">
+            <img src="dermalens.png" alt="DermaLens VR body model" class="project-image" />
             <div class="project-card-body">
               <span class="project-tag">FastAPI · VR Education</span>
               <h3>DermaLens</h3>
               <p>
-                Content management backend for a VR dermatology education app. Serves hierarchical
-                educational content and interactive quizzes with media support, built for consumption
-                by a VR frontend.
+                Content backend for a VR dermatology training app. Serves staged skin-condition models,
+                lesson content, and interactive quizzes to the VR frontend.
               </p>
               <ul class="tech-list">
                 <li>FastAPI</li>
@@ -87,23 +91,45 @@
             </div>
           </article>
 
-          <article class="project-card project-card--placeholder">
+          <article class="project-card">
+            <img src="whackamole_game.jpg" alt="Skacky Whunky whack-a-mole game" class="project-image" />
             <div class="project-card-body">
-              <span class="project-tag">Project title</span>
-              <h3>Coming soon</h3>
+              <span class="project-tag">Desktop Game</span>
+              <h3>Skacky Whunky</h3>
               <p>
-                Placeholder — swap this out with another project's description, tech stack, and links.
+                A whack-a-mole style desktop game with a timer and miss counter, built around simple
+                reflex-based gameplay and animated sprite targets.
               </p>
               <ul class="tech-list">
-                <li>Tech</li>
-                <li>Stack</li>
+                <li>C#</li>
+                <li>.NET</li>
               </ul>
-              <div class="project-links">
-                <a href="#" onclick="return false;">Code →</a>
-              </div>
+              <div class="project-links"></div>
             </div>
           </article>
 
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+      <div class="section-inner">
+        <h2>Certifications</h2>
+        <div class="cert-list">
+          <a href="IBM_Machine_Learning_Cert.pdf" target="_blank" rel="noopener" class="cert-card">
+            <div>
+              <h3>IBM Machine Learning</h3>
+              <p>Professional certificate</p>
+            </div>
+            <span class="cert-link">View →</span>
+          </a>
+          <a href="Wadhwani%20Foundation%20Certificate%20-%206a74b3699ca40b8cfdb7596a.pdf" target="_blank" rel="noopener" class="cert-card">
+            <div>
+              <h3>Wadhwani Foundation</h3>
+              <p>Certificate</p>
+            </div>
+            <span class="cert-link">View →</span>
+          </a>
         </div>
       </div>
     </section>
