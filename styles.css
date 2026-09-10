@@ -309,6 +309,19 @@ section h2 {
   border-color: var(--accent);
 }
 
+.cert-thumb {
+  width: 72px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.cert-card-text {
+  flex: 1;
+}
+
 .cert-card h3 {
   margin: 0 0 4px;
   font-size: 1.05rem;
